@@ -48,11 +48,11 @@ void ClearDisplay(void *pixels)
 
 void draw_sprite(void *pixels, uint8_t *sprite, uint8_t startX, uint8_t startY)
 {
-  for (int x = startX; x < GAME_WIDTH; x++) {
-    for (int y = startX; y < GAME_HEIGHT; y++) {
+  for (int x = 0; x < 16; x++) {
+    for (int y = 0; y < 16; y++) {
       uint8_t *pixel = &sprite[y * 16 + x];
       if (*pixel != 0) {
-        set_pixel(pixels, x, y, 0xFF, 0xFF, 0xFF);
+        set_pixel(pixels, startX+x, startY+y, 0x00, 0x00, 0x00);
       }
     }
   }
