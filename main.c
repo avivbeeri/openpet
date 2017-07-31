@@ -160,7 +160,6 @@ int main(int argc, char* args[])
     }
     // DRAW STEP
     ClearDisplay(bitmap_memory);
-    set_pixel(bitmap_memory, 16, 16, 0x00, 0x00, 0x00);
     draw_sprite(bitmap_memory, botamon_sprite, 8, 8);
 
     // FLIP BUFFER
