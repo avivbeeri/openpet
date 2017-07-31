@@ -1,5 +1,11 @@
 #include <stdint.h>
 
+typedef struct sprite_t {
+  uint8_t width;
+  uint8_t height;
+  uint8_t *bitmap;
+} VPET_sprite;
+
 #define SPRITE_SIZE 16*16
 uint8_t botamon_sprite[SPRITE_SIZE] = {
   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
